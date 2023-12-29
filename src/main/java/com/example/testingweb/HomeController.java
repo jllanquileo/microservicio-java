@@ -9,7 +9,7 @@ public class HomeController {
 
 	@RequestMapping("/")
 	public @ResponseBody String greeting() {
-		String passw = "P4ss";
+		String SQL = "SELECT * FROM USERS";
 		return "Hello, World";
 	}
 
