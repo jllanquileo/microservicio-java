@@ -24,3 +24,4 @@ jobs:
           chmod +x gradlew
           ./gradlew build sonar -Dsonar.token=${{secrets.TOKEN_SONARCLOUD}}
           echo "Building"
+          
