@@ -18,3 +18,9 @@ jobs:
       - name: Checkout Code
         run: |
           echo "laboratorio"
+
+      - name: SonarCloud Analysis
+        run: |
+          chmod +x gradlew
+          ./gradlew build sonar -Dsonar.token=${{secrets.TOKEN_SONARCLOUD}}
+          echo "Building"
