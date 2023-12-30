@@ -2,8 +2,8 @@ FROM openjdk:11-jre
 
 EXPOSE 8085
 
-ADD spring-microservicio-java.jar /app/spring-microservicio-java.jar
+ADD spring-petclinic-2.6.0.jar /app/spring-spring-petclinic-2.6.0.jar
 
 WORKDIR /app
 
-CMD java -jar spring-microservicio-java.jar
+CMD java -jar spring-petclinic-2.6.0.jar
